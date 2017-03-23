@@ -1,0 +1,22 @@
+Lecture 12
+
+1  Colour Image Processing
+
+The human visual system can distinguish hundreds of thousands of different colour shades and intensities, but only around 100 shades of grey. Therefore, in an image, a great deal of extra information may be contained in the colour, and this extra information can then be used to simplify image analysis, e.g. object identification and extraction based on colour.
+
+Three independent quantities are used to describe any particular colour. The hue is determined by the dominant wavelength. Visible colours occur between about 400nm (violet) and 700nm (red) on the electromagnetic spectrum, as shown in figure 1.
+
+Figure
+Figure 1: The visible spectrum.
+
+The saturation is determined by the excitation purity, and depends on the amount of white light mixed with the hue. A pure hue is fully saturated, i.e. no white light mixed in. Hue and saturation together determine the chromaticity for a given colour. Finally, the intensity is determined by the actual amount of light, with more light corresponding to more intense colours[1].
+
+Achromatic light has no colour - its only attribute is quantity or intensity. Greylevel is a measure of intensity. The intensity is determined by the energy, and is therefore a physical quantity. On the other hand, brightness or luminance is determined by the perception of the colour, and is therefore psychological. Given equally intense blue and green, the blue is perceived as much darker than the green. Note also that our perception of intensity is nonlinear, with changes of normalised intensity from 0.1 to 0.11 and from 0.5 to 0.55 being perceived as equal changes in brightness[2].
+
+Colour depends primarily on the reflectance properties of an object. We see those rays that are reflected, while others are absorbed. However, we also must consider the colour of the light source, and the nature of human visual system. For example, an object that reflects both red and green will appear green when there is green but no red light illuminating it, and conversely it will appear red in the absense of green light. In pure white light, it will appear yellow (= red + green).
+
+2  Tristimulus theory of colour perception
+
+As discussed in lecture 1, the human retina has 3 kinds of cones. The response of each type of cone as a function of the wavelength of the incident light is shown in figure 2. The peaks for each curve are at 440nm (blue), 545nm (green) and 580nm (red). Note that the last two actually peak in the yellow part of the spectrum[2].
+
+
